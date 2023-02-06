@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick Andrade</title>
+    <link href="gama.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        
+    </head>
+<body>
+    <header class="cabeça">
+       <!--logo patrick dev-->
+        <div id="logo">
+            <img src="DESENVOLVERWEB.jpg" width="80"/>
+        </div>
+      
+        <!--links-->
+        <div class="content">
+              <ul>
+                <li>
+                    <a target="_blank" href="https://github.com/DevPatriick">GitHub</a>
+                </li>
+                <li>
+                    <a target="_blank" href="mailto:andrade.patrickreis@gmail.com">Email</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://wa.me/51984325873">WhatsApp</a>
+                </li>
+              </ul>
+        </div>
+    </header>
+    <main id="main">
+       <!--Nome-->
+        <div class="name">
+            <h1>Patrick Andrade</h1>
+            <h5>Desenvolvedor Web</h5>
+          
+        </div>
+         <div onclick="displayAbout()" id="arrow" >
+            <i id="animation" class="fas fa-sort-down"></i>
+             
+         </div>
+        <div style="display: none"  id="about">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nisi id voluptate tempora quasi perferendis neque vel voluptas animi aut rerum consequatur, sit, eligendi aliquid! Amet laborum autem praesentium tempore.</p>
+        </div>
+        <div id="button">
+            <form acctio="text">
+                <input type="text" placeholder="Deixe seu contato">
+            </form>
+            <button>Enviar</button>
+        </div>
+        
+        
+    </main>
+
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById("animation");
+            arrow.classList.toggle("rotate");
+            var display = document.getElementById("about");
+            display.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
